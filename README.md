@@ -1,2 +1,1 @@
-# dolar
 # dolar-arg
