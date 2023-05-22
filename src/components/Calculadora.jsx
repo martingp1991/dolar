@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+
 
 function Calculadora({
     amount,
@@ -52,25 +52,5 @@ function Calculadora({
     );
 }
 
-Calculadora.propTypes = {
-    amount: PropTypes.number.isRequired,
-    selectedCurrency: PropTypes.string.isRequired,
-    exchangeType: PropTypes.string.isRequired,
-    handleAmountChange: PropTypes.func.isRequired,
-    handleCurrencyChange: PropTypes.func.isRequired,
-    handleExchangeTypeChange: PropTypes.func.isRequired,
-    convertCurrency: PropTypes.func.isRequired,
-    convertedAmount: PropTypes.number.isRequired,
-    exchangeRates: PropTypes.arrayOf(
-        PropTypes.shape({
-            casa: PropTypes.shape({
-                nombre: PropTypes.string.isRequired,
-                variacion: PropTypes.string.isRequired,
-                compra: PropTypes.string.isRequired,
-                venta: PropTypes.string.isRequired,
-            }).isRequired,
-        })
-    ),
-};
 
 export default Calculadora;

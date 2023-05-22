@@ -1,7 +1,6 @@
-import PropTypes from 'prop-types';
 import { FaArrowUp, FaArrowDown } from 'react-icons/fa';
 
-function Tarjetas({ exchangeRates }) {
+function Card({ exchangeRates }) {
 
 
 
@@ -18,18 +17,7 @@ function Tarjetas({ exchangeRates }) {
         return 'text-gray-800';
     };
 
-    Tarjetas.propTypes = {
-        exchangeRates: PropTypes.arrayOf(
-            PropTypes.shape({
-                casa: PropTypes.shape({
-                    nombre: PropTypes.string.isRequired,
-                    variacion: PropTypes.string.isRequired,
-                    compra: PropTypes.string.isRequired,
-                    venta: PropTypes.string.isRequired,
-                }).isRequired,
-            })
-        ),
-    };
+
 
     return (
         <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2 lg:grid-cols-2">
@@ -70,4 +58,4 @@ function Tarjetas({ exchangeRates }) {
 
 
 
-export default Tarjetas;
+export default Card;
