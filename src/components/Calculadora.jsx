@@ -16,7 +16,6 @@ function Calculadora({
             <h2 className="mb-4 text-2xl font-bold">Convertir de ARS a:</h2>
             <div className="flex items-center gap-4">
                 <input
-                    type="number"
                     className="p-2 border border-gray-400 rounded"
                     value={amount}
                     onChange={handleAmountChange}
